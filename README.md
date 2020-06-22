@@ -1,4 +1,4 @@
-## FINAL_PROJECT
+## BOOKINGS CANCELLATION PREDICTION
 
 About the Project
 -----------------
@@ -42,3 +42,8 @@ I compare 3 machine learning models in this project, those are Logistic Regressi
 | Recall Score | f1-Score |
 |--------------|----------|
 |        0.836 |    0.846 |
+
+Dashboard
+---
+#### 1. Home
+![alt text](https://github.com/rifkimputra/FINAL_PROJECT/static/images/home.png "Dashboard Home")
