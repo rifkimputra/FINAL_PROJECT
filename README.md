@@ -46,4 +46,4 @@ I compare 3 machine learning models in this project, those are Logistic Regressi
 Dashboard
 ---
 #### 1. Home
-![alt text](https://github.com/rifkimputra/FINAL_PROJECT/tree/master/dashboard/static/images/home.png)
+![alt text] (https://github.com/rifkimputra/FINAL_PROJECT/tree/master/dashboard/static/images/home.png)
