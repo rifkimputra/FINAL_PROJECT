@@ -1,0 +1,40 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body{margin: 0px;}.container-flex{display: flex;height: 100vh}
+    </style>
+</head>
+<body>
+    <header class="masthead">
+        <div class="container-fluid h-100">
+          <div class="row h-50 align-items-left">
+            <div class="col-12 text-left">
+                <h1 class="mt-5 mb-0" style="font-family: 'Helvetica Neue', serif; font-size: 50px;color: black;">Bookings Data </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+    <table class="table">
+        <thead>
+            <tr>
+                {% for item in data.columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, item in data.iterrows()%}
+            <tr>
+                {% for col in item %}
+                    <td> {{col}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock body%}

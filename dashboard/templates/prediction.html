@@ -1,0 +1,70 @@
+{% extends 'layout.html'%}
+<html>
+    <head>
+
+    </head>
+    <body>
+    {% block body%}
+    <div class="container pt 5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-3">
+                <h3>Fill This Form for Prediction!</h3>
+                <!-- method POST mengubah menjadi list 2 dimensi -->
+                <form action="/prediction" method="POST">
+                    <select id="deposit_type" name="deposit_type" placeholder="Deposit Type"required="required" class="custom-select custom-select-lg">
+                        <option value="0">No Deposit</option>
+                        <option value="1">Non Refund</option>
+                        <option value="2">Refundable</option>
+                    </select> 
+                    <input type="number" name="lead_time" max="600" min="0" placeholder="Lead Time (0 - 600)" class="form-control form-control-sm mt-2">
+                    <!-- Country -->
+                    <select id="country" name="country" placeholder="Contry" required="required" class="custom-select custom-select-lg">
+                        <option value="135">Portugal</option>
+                        <option value="59">Great Britain</option>
+                        <option value="56">France</option>
+                        <option value="51">Spain</option>
+                        <option value="43">Germany</option>
+                        <option value="81">Italy</option>
+                        <option value="76">Ireland</option>
+                        <option value="15">Belgium</option>
+                        <option value="25">Brazil</option>
+                        <option value="123">Netherlands</option>
+                    </select>
+                    <!-- Price -->
+                    <input type="number" name="price" placeholder="Price (in EUR)" class="form-control form-control-sm mt-2">
+                    <!-- Total of Special Requests -->
+                    <select id="total_of_special_requests" name="total_of_special_requests" required="required" class="custom-select custom-select-lg">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Arrival Date Day of Month -->
+                    <input type="number" name="arrival_date_day_of_month" max="31" min="1" placeholder="Date Day (1-31)" class="form-control form-control-sm mt-2">
+                    <!-- Arrival Date Week Number-->
+                    <input type="number" name="arrival_date_week_number" max="53" min="1" placeholder="Date Week Number (1-53)" class="form-control form-control-sm mt-2">
+                    <!-- Market Segment -->
+                    <select id="market_segment" name="market_segment" required="required" class="custom-select custom-select-lg">
+                        <option value="0">Aviation</option>
+                        <option value="1">Complementary</option>
+                        <option value="2">Corporate</option>
+                        <option value="3">Direct</option>
+                        <option value="4">Groups</option>
+                        <option value="5">Offline TA/TO</option>
+                        <option value="6">Online TA</option>
+                    </select>
+                    <!-- Previous Cancellations -->
+                    <input type="number" name="previous_cancellations" placeholder="Previous Cancellations" class="form-control form-control-sm mt-2">
+                    <button type="submit" class="btn btn-warning mt-4">
+                        Click to Predict
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock body%}
+    </body>
+</html>
