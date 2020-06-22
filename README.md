@@ -47,3 +47,18 @@ Dashboard
 ---
 #### 1. Home
 ![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/home.png)
+
+#### 2. About
+![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/about.png)
+
+#### 3. Dataset
+![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/dataset.png)
+
+#### 4. Data Visualization
+![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/visual.png)
+
+#### 5. Prediction
+![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/prediction.png)
+
+#### 6. Result
+![Alt text](https://github.com/rifkimputra/FINAL_PROJECT/blob/master/dashboard/static/images/result.png)
